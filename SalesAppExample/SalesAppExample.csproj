@@ -246,8 +246,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\SalesAppExample.Entities.csproj">
-      <Project>{A5325900-DD57-453B-95A1-1F65384F39AC}</Project>
+    <ProjectReference Include="..\SalesAppExample.Entities\SalesAppExample.Entities.csproj">
+      <Project>{a5325900-dd57-453b-95a1-1f65384f39ac}</Project>
       <Name>SalesAppExample.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\SalesAppExample.Models\SalesAppExample.Models.csproj">

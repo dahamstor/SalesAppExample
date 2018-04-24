@@ -21,7 +21,7 @@ namespace SalesAppExample.Services.DiscountCalculator
         public double Calculate (DiscountCalculationModel model)
         {
             // Discount applied only on first purchase by the customer
-            var isFirstPurchase = _db.Purchases.Any(p => p.CustomerId == model.CustomerId);
+            var isFirstPurchase = !_db.Purchases.Any(p => p.CustomerId == model.CustomerId);
             return (isFirstPurchase ? model.Sum * 0.7 : model.Sum);
         }
     }
